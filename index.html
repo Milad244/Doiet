@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <title>Doiet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/punch.png">
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/a2b54467f5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="select-nav">
+        <div id="select-nav-container" class="border-container">
+            <h1>Your Todo Lists</h1>
+            <div>
+                <input id="todo-List-Input" placeholder="Todo list name" onkeypress="enterStart(addTodoList, event);">
+                <button onclick="addTodoList();">Add</button>
+            </div>
+            <ul id="todo-lists">
+
+            </ul>
+        </div>
+    </nav>
+    <section id="content">
+        <div class="todo-container border-container" id="ToDo-container">
+            <h2>To Do</h2>
+            <div class="flex-container">
+                <input class="todo-input" id="ToDo-input" placeholder="Todo name" onkeypress="enterStart(addTodo, event, 'ToDo');">
+                <button onclick="addTodo('ToDo');">Add</button>
+            </div>
+            <div id="ToDo-div"></div>
+        </div>
+
+        <div class="todo-container border-container" id="Doing-container">
+            <h2>Doing</h2>
+            <div class="flex-container">
+                <input class="todo-input" id="Doing-input" placeholder="Todo name" onkeypress="enterStart(addTodo, event, 'Doing');">
+                <button onclick="addTodo('Doing');">Add</button>
+            </div>
+            <div id="Doing-div"></div>
+        </div> 
+
+        <div class="todo-container border-container" id="Done-container">
+            <h2>Done</h2>
+            <div class="flex-container">
+                <input class="todo-input" id="Done-input" placeholder="Todo name" onkeypress="enterStart(addTodo, event, 'Done');">
+                <button onclick="addTodo('Done');">Add</button>
+            </div>
+            <div id="Done-div"></div>   
+        </div>
+                                                                    
+    </section>
+</body>
+</html>

@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+body{
+    background-color: rgb(3, 44, 77);
+}
+.border-container{
+    border: 2px solid rgb(245, 182, 65);
+    height: 97vh;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#select-nav-container {
+    float: right;
+    max-width: 300px;
+    width: 30%;
+    background-color: rgb(109, 18, 184);
+    color: white;
+}
+#select-nav-container h1{ 
+    text-align: center;
+    padding: 10px;
+}
+
+#select-nav-container div{
+    display: flex;
+    flex-direction: row;
+}
+#select-nav-container input{ 
+    border: 2px solid rgb(255, 72, 0);
+    padding: 15px 2px;
+    background-color: rgb(109, 18, 184);
+    color: cyan;
+    width: 100%;
+}
+#select-nav-container input::placeholder{
+    color: cyan;
+    font-size: 1.1em;
+    border-color: rgb(255, 72, 0);
+}
+#select-nav-container input:focus{
+    outline: none;
+    border: 2px solid rgb(255, 72, 0);
+}
+#select-nav-container button{ 
+    border: 2px solid rgb(255, 72, 0);
+    padding: 15px;
+    background-color: rgb(109, 18, 184);
+    color: cyan;
+    cursor: pointer;
+}
+#select-nav-container button:hover{ 
+    background-color: hsl(337, 83%, 57%);
+}
+.list-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4px;
+}
+#select-nav-container li{
+    display: block;
+    list-style-type: none;
+    border: 2px solid rgb(255, 72, 0);
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+#select-nav-container li:hover{
+    background-color: hsl(337, 83%, 57%);
+    transition: 0.3s;
+}
+
+#select-nav-container .activeList{
+    border: 2px solid cyan;
+}
+
+.list-container .trash-can{
+    padding-left: 3px;
+}
+
+#content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.todo-container{
+    color: white;
+    text-align: center;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.todo-container h2 {
+    padding: 10px;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+.todo-input{
+    width: 100%;
+    padding: 10px 2px;
+    background-color: rgb(3, 44, 77);
+    border: 2px solid rgb(4, 233, 119);
+    color: cyan;
+    margin-bottom: 10px;
+}
+.todo-input::placeholder{
+    color: cyan;
+}
+.todo-input:focus{
+    outline: none;
+}
+.todo-container button{
+    padding: 10px;
+    color: cyan;
+    border: 2px solid rgb(4, 233, 119);
+    background-color: rgb(3, 44, 77);
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.todo-container button:hover{
+    opacity: 80%;
+    transition: 0.3s;
+}
+
+.todo-container div p{
+    border: 2px solid rgb(4, 233, 119);
+    padding: 10px 5px;
+    text-align: left;
+    width: 100%;
+    overflow-wrap: break-word;
+    min-height: 20px;
+}
+@media only screen and (max-width: 663px){
+    *{
+        opacity: 100%;
+    }
+}
+.text-container{
+    margin: auto;
+    margin-bottom: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.buttons-container{
+    border: 2px solid rgb(235, 197, 126);
+    width: 25px;
+}
+.trash-can{
+    color: red;
+    padding-top: 3px;
+    cursor: pointer;
+}
